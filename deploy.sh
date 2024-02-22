@@ -16,6 +16,6 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 
 # git push -f https://jinxiongxiong.github.io/blog 
- git remote add origin https://github.com/jinxiongxiong/blog.git
-
+ git remote add origin https://github.com/jinxiongxiong/blog.git 
+# git push -f https://github.com/jinxiongxiong/blog.git 
 cd -

@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: "/2.png"
+heroImage: "/pine_nuts.png"
 heroText: 松子
 heroImageStyle:
   {
