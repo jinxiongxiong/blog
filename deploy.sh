@@ -1,21 +1,21 @@
-#!/usr/bin/env sh
-
-# 确保脚本抛出遇到的错误
+#!/usr/bin/env bash
 set -e
-
-# 生成静态文件
-npm run docs:build
-
-# 进入生成的文件夹
+yarn build
 cd docs/.vuepress/dist
 
+# git config --global user.email "jinyubrave@163.com"
+# git config --global user.name "jinyubrave@163.com"
 git init
 git add -A
 git commit -m 'deploy'
-
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-
-# git push -f https://jinxiongxiong.github.io/blog 
+# git push -f https://${ACCESS_TOKEN}@github.com/xia0hj/xia0hj.github.io.git master:gh-pages
  git remote add origin https://github.com/jinxiongxiong/blog.git 
-# git push -f https://github.com/jinxiongxiong/blog.git 
+
+
 cd -
+ 
+#  git remote add origin https://github.com/jinxiongxiong/blog.git 
+#  git push --set-upstream origin main
+
+# git push -f https://github.com/jinxiongxiong/blog.git 
+ 
